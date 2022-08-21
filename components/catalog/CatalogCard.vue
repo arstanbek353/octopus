@@ -16,15 +16,15 @@
         <div class="card__description">{{ textCut(data.description, 227) }}</div>
       </div>
       <div class="card__order-info">
-        <div class="card__price">{{ data.totalPrice }}</div>
+        <div class="card__price">{{ data.totalPrice.toLocaleString() }} ₽</div>
         <dl class="card__dl">
           <div class="card__dl-item">
             <dt class="card__dt">Количество</dt>
-            <dd class="card__dd">{{ data.quantity }} шт.</dd>
+            <dd class="card__dd">{{ data.quantity.toLocaleString() }} шт.</dd>
           </div>
           <div class="card__dl-item">
             <dt class="card__dt">Стоимость за штуку</dt>
-            <dd class="card__dd">{{ data.price }} ₽</dd>
+            <dd class="card__dd">{{ data.price.toLocaleString() }} ₽</dd>
           </div>
         </dl>
         <div class="card__action">

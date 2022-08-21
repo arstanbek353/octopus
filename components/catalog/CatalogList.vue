@@ -6,7 +6,7 @@
         <SearchFilter class="catalog-list__search"/>
       </header>
       <div class="catalog-list__content">
-        <template v-if="data.length">
+        <template v-if="data != null && data.length">
           <CatalogCard 
             v-for="item in data" 
             :key="item.id"
