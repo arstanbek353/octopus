@@ -23,7 +23,7 @@ export default {
     ]),
   },
   created() {
-    //this.resetQueryParams({is_favourite: null, ids: null, q: null, type: null})
+    this.resetQueryParams()
   },
   mounted() {
     this.$fetch()
